@@ -13,10 +13,11 @@ public class subset {
         return;
     }
     //recursive function
-    //if not want to pair
-    findSubset(str,i+1,ans);
     //want to pair
     findSubset(str,i+1,ans+str.charAt(i));
+    //if not want to pair
+    findSubset(str,i+1,ans);
+    
 }
     public static void main(String[] args) {
         String str = "abc";

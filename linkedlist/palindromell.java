@@ -37,7 +37,7 @@ public class palindromell {
     public Node findMid(Node head){
         Node slow = head;
         Node fast = head;
-        while (fast != null && fast.next!= null) {
+        while (fast != null &&cycle_detection.java fast.next!= null) {
             slow = slow.next;//+1
             fast = fast.next.next;//+2
 
